@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@plugin "daisyui";
+.btn-active{
+   background-color: rgb(0, 246, 160);
+
+}
+
+.btn-unactive{
+    color: blue;
+}
