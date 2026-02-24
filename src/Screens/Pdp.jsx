@@ -1,7 +1,12 @@
 import React from "react";
+import  Navbar  from "../Components/Navbar.jsx";
 
 const Pdp = () => {
-  return <div>Compontent page is here</div>;
+  return (
+    <>
+    <Navbar hideSearchBar = {true} />
+  </>
+  );
 };
 
 export default Pdp;

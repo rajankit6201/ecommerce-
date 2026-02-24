@@ -5,7 +5,7 @@ import ProductData from "../Components/ProductData";
 const Home = () => {
     return (
         <div>
-            <Navbar />
+            <Navbar/>
             <ProductData/>
         </div>
 

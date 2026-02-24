@@ -25,7 +25,7 @@ const SearchBar = () => {
     let showSearchSuggestion =
         searchQuery.trim().length > 0 && searchSuggestion.length > 0;
 
-    return (
+     return (
         <div className="w-2/8 h-3/4 z-20">
             <input
                 onChange={(e) => {
