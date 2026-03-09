@@ -3,7 +3,7 @@ import Star from './Icons/Star.jsx'
 import { Link } from 'react-router-dom'
 const ProductCard = ({ data }) => {
     const [showMore, setShowMore] = useState(false);
-    const { title, description, category, price, thumbnail } = data;
+    const { title, description, category, price, thumbnail , id } = data;
     let d = description
     // desc = description.length > 50 ? description.substring(0, 50) : description;
 
@@ -12,9 +12,9 @@ const ProductCard = ({ data }) => {
     }
     return (
         <Link
-            to={`/products`}
+            to={`/products/${id}`}
 
-            className="border-2 bg-gray-600 font-medium w-[23%]  h-[90%] m-3 rounded-2xl hover:bg-gray-700 transition duration-400 ease-in-out p-4 hover:-translate-y-2"
+            className="border-2 bg-white-600 font-medium w-[23%]  h-[90%] m-3 rounded-2xl hover:bg-gray-700 transition duration-400 ease-in-out p-4 hover:-translate-y-2"
         >
             <img src={thumbnail} alt="picture" />
             <p>{category}</p>
@@ -32,7 +32,7 @@ const ProductCard = ({ data }) => {
                 <button className="border-2 w-full bg-yellow-400 rounded-md ">wishlist</button>
             </div>
 
-        
+
         </Link>
     )
 }

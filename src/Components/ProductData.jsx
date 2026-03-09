@@ -16,6 +16,9 @@ function ProductData() {
             let limit = 12;
             let skip = (currentpage-1)*limit;
             const apiData = await fetch(`https://dummyjson.com/products?limit=${limit}&skip=${skip}`);
+            console.log(apiData);
+            console.log("hello");
+            
             const jsonData = await apiData.json();
             setData(jsonData.products);
 

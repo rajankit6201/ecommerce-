@@ -1,5 +1,5 @@
-import{Routes,Route} from 'react-router-dom'
-import Pdp from "./Screens/Pdp"
+import { Routes, Route } from 'react-router-dom'
+import Pdp from "./Screens/Pdp.jsx"
 import './index.css'
 import Home from "./Screens/Home";
 import Navbar from "./Components/Navbar";
@@ -9,7 +9,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/Products" element={<Pdp/>} />
+      <Route path="/products/:id" element={<Pdp />} />
     </Routes>
   )
 }
